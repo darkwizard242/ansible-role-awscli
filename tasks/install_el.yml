@@ -1,0 +1,13 @@
+---
+# tasks file for awscli - EL
+
+- name: Installing {{ awscli_el_pre_reqs }} on EL based systems as pre-requisite.
+  package:
+    name: "{{ awscli_el_pre_reqs }}"
+    state: "{{ awscli_el_pre_reqs_desired_state }}"
+
+- name: Installing {{ awscli_app_el_package }} version on EL based systems
+  pip:
+    executable: "{{ pip_executable }}"
+    name: "{{ awscli_app_el_package }}"
+    state: "{{ awscli_desired_state }}"
