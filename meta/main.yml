@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  role_name: awscli
+  author: Ali Muhammad
+  description: Installs awscli using pip3 package
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+
+  galaxy_tags:
+    - awscli
+    - aws
+    - awsapi
+    - cloud
+    - cloudcomputing
+    - os
+
+dependencies: []
