@@ -1,6 +1,6 @@
 # Ansible Role: awscli
 
-Role to install `awscli` pip package on **Debian/Ubuntu** and **EL** systems.
+Role to install `awscli` pip package on **Debian/Ubuntu** systems.
 
 ## Requirements
 
@@ -17,14 +17,9 @@ awscli_debian_pre_reqs:
   - python3
   - python3-pip
 awscli_debian_pre_reqs_desired_state: present
-awscli_el_pre_reqs:
-  - python3
-  - python3-pip
-awscli_el_pre_reqs_desired_state: present
 pip_executable: pip3
 pip_upgrade_version: latest
 awscli_app_debian_package: awscli
-awscli_app_el_package: awscli
 awscli_desired_state: present
 ```
 
@@ -34,12 +29,9 @@ Variable                             | Value (default)      | Description
 ------------------------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------------
 awscli_debian_pre_reqs               | python3, python3-pip | Packages required to install AWS CLI on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
 awscli_debian_pre_reqs_desired_state | present              | Desired state for AWS CLI pre-requisite apps on Debian systems.
-awscli_debian_pre_reqs               | python3, python3-pip | Packages required to install AWS CLI on EL based systems. Using python3 as python2.x is EOL by end of 2020.
-awscli_el_pre_reqs_desired_state     | present              | Desired state for AWS CLI pre-requisite apps on EL based systems.
 pip_executable                       | pip3                 | The executable to utilize for installing **pip** package of `awscli`.
 awscli_app_debian_package            | awscli               | Name of awscli application package require to be installed i.e. `awscli` on Debian based systems.
 awscli_desired_state                 | present              | Desired state for AWS CLI.
-awscli_app_el_package                | awscli               | Name of awscli application package require to be installed i.e. `awscli` on EL based systems.
 
 ## Dependencies
 
