@@ -1,6 +1,12 @@
 ---
 # tasks file for awscli - EL
 
+- name: Installing epel-release on EL systems
+  package:
+    name: epel-release
+    state: present
+    update_cache: yes
+
 - name: Installing {{ awscli_el_pre_reqs }} on EL based systems as pre-requisite.
   package:
     name: "{{ awscli_el_pre_reqs }}"
