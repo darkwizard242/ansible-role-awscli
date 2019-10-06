@@ -6,10 +6,6 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-def test_awscli_package_installed(host):
-    assert host.package("awscli").is_installed
-
-
 def test_awscli_binary_exists(host):
     assert host.file('/usr/local/bin/aws').exists
 
