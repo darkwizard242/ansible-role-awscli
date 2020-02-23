@@ -1,6 +1,5 @@
 ---
-sudo: required
-
+os: linux
 dist: bionic
 
 language: python
@@ -13,7 +12,7 @@ services:
 env:
   global:
     - ROLE_NAME: awscli
-  matrix:
+  jobs:
     - DISTRO: ubuntu-18.04
     - DISTRO: ubuntu-16.04
     - DISTRO: debian-buster
