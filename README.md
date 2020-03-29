@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.com/darkwizard242/ansible-role-awscli.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-awscli) ![Ansible Role](https://img.shields.io/ansible/role/43831?color=dark%20green%20) ![Ansible Role](https://img.shields.io/ansible/role/d/43831?label=role%20downloads) ![Ansible Quality Score](https://img.shields.io/ansible/quality/43831?label=ansible%20quality%20score) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-awscli&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-awscli) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-awscli?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-awscli?color=orange&style=flat-square)
+
 # Ansible Role: awscli
 
-Role to install `awscli` pip package on **Debian/Ubuntu** systems.
+Role to install [awscli](https://github.com/aws/aws-cli) pip package on **Debian/Ubuntu** systems.
 
 ## Requirements
 
@@ -44,7 +46,7 @@ For default behaviour of role (i.e. installation of **awscli** package) in ansib
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awscli
+    - darkwizard242.awscli
 ```
 
 For customizing behavior of role (i.e. installation of latest **awscli** package instead of ensure it is installed ) in ansible playbooks.
@@ -52,9 +54,9 @@ For customizing behavior of role (i.e. installation of latest **awscli** package
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awscli
-      vars:
-        awscli_desired_state: latest
+    - darkwizard242.awscli
+  vars:
+    awscli_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. removal of **awscli** package) in ansible playbooks.
@@ -62,9 +64,9 @@ For customizing behavior of role (i.e. removal of **awscli** package) in ansible
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awscli
-      vars:
-        awscli_desired_state: absent
+    - darkwizard242.awscli
+  vars:
+    awscli_desired_state: absent
 ```
 
 ## License
