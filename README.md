@@ -20,7 +20,6 @@ awscli_debian_pre_reqs:
   - python3-pip
 awscli_debian_pre_reqs_desired_state: present
 pip_executable: pip3
-pip_upgrade_version: latest
 awscli_app_debian_package: awscli
 awscli_desired_state: present
 ```
