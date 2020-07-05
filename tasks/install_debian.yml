@@ -1,13 +1,13 @@
 ---
-# tasks file for awscli - Debian
+# tasks file for awscli - Debian/Ubuntu Family
 
-- name: Installing {{ awscli_debian_pre_reqs }} on Debian based systems as pre-requisite.
+- name: Debian/Ubuntu Family | Installing {{ awscli_debian_pre_reqs }} as pre-requisite.
   package:
     name: "{{ awscli_debian_pre_reqs }}"
     state: "{{ awscli_debian_pre_reqs_desired_state }}"
     force_apt_get: yes
 
-- name: Installing {{ awscli_app_debian_package }} version on Debian based systems.
+- name: Debian/Ubuntu Family | Installing {{ awscli_app_debian_package }}
   pip:
     executable: "{{ pip_executable }}"
     name: "{{ awscli_app_debian_package }}"
