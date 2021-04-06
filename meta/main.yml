@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: awscli
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs awscli using pip3 package
   company: none
   license: MIT
