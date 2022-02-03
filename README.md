@@ -26,13 +26,13 @@ awscli_desired_state: present
 
 ### Variables table:
 
-Variable                             | Value (default)      | Description
------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------
-awscli_debian_pre_reqs               | python3, python3-pip | Packages required to install AWS CLI on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
-awscli_debian_pre_reqs_desired_state | present              | Desired state for AWS CLI pre-requisite apps on Debian systems.
-pip_executable                       | pip3                 | The executable to utilize for installing **pip** package of `awscli`.
-awscli_app_debian_package            | awscli               | Name of awscli application package require to be installed i.e. `awscli` on Debian based systems.
-awscli_desired_state                 | present              | Desired state for AWS CLI.
+Variable                             | Description
+------------------------------------ | ---------------------------------------------------------------------------------------------------------------
+awscli_debian_pre_reqs               | Packages required to install AWS CLI on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
+awscli_debian_pre_reqs_desired_state | Desired state for AWS CLI pre-requisite apps on Debian systems.
+pip_executable                       | The executable to utilize for installing **pip** package of `awscli`.
+awscli_app_debian_package            | Name of awscli application package require to be installed i.e. `awscli` on Debian based systems.
+awscli_desired_state                 | Desired state for AWS CLI.
 
 ## Dependencies
 
@@ -74,4 +74,4 @@ For customizing behavior of role (i.e. removal of **awscli** package) in ansible
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
+This role was created by [Ali Muhammad](https://alimuhammad.dev/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
