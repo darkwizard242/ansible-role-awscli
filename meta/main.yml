@@ -17,7 +17,6 @@ galaxy_info:
       versions:
         - bullseye
         - buster
-        - stretch
 
   galaxy_tags:
     - awscli
